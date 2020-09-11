@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "css-import": "0.0.1",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
+    "html": "^1.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "node-ejs": "^1.2.3",
+    "node-sass": "^4.14.1",
+    "node-static": "^0.7.11",
+    "sequelize": "^5.21.11"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.6",
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^5.5.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "serve": "nodemon app.js"
+  },
+  "baseDir": "WEB_Project",
+  "author": "Neda Zalieskaite",
+  "license": "ISC",
+  "description": ""
+}

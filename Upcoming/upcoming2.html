@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/reset.css">
+	<link rel="stylesheet" type="text/css" href="../assets/particles.css">
+	<link rel="stylesheet" type="text/css" href="../assets/upcoming.css">
+	<link rel="icon" href="../images/Capture.png" type="image" />
+
+</head>
+
+<body>
+	<div class="page-bg"></div>
+
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+
+		<nav class="navbar navbar-default bg-light border border-dark navbar-static-top" style="margin: 14px;">
+		    <div class="container-fluid">
+		      <div class="navbar-header" style="margin-top: 20px; margin-bottom: 20px; margin-left: 15px">
+		        <form class="form-inline" name="buttons" method="post">
+		          <input class="form-control border border-dark text-center" style="width: 100px;"
+		                 name="button" type="button" value="Home" href="#" onclick="openPage('/panel')"/>
+		        </form>
+		      </div>
+		    </div>
+		  </nav>
+
+    <div>
+      <h1 class="align-middle neon" style="font-weight: bold; margin: 30px;">Upcoming movie list</h1>
+    </div>
+
+	<!-- Displaying the movies -->
+	<div id="movie-display">
+	<div class="container">
+		<div class="row">
+			<div class="genreLabel">
+				<h1 id="movieGenreLabel"></h1></div>
+				<div id="movie-grid">
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script type="text/javascript" src="../Upcoming/upcomingmovies.js"></script>
+	<script type="text/javascript" src="../index.js"></script>
+
+</body>
+
+</html>

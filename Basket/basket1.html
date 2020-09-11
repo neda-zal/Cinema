@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Basket</title>
+  <link rel="icon" href="../assets/images/Capture.png" type="image" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/particles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/basket.css">
+</head>
+
+<body>
+
+    <div class="page-bg"></div>
+
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+
+    <nav class="navbar navbar-default bg-light border border-dark navbar-static-top m-3">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <form class="form-inline p-3" name="buttons" method="post">
+            <input class="form-control border border-dark text-center" style="width: 100px;"
+                   name="button" type="button" value="Home" href="#" onclick="openPage('/panel')"/>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+  		<h1 class="align-middle neon" style="font-weight: bold; margin: 30px;">Your basket</h1>
+  	</div>
+
+  <div class="container mt-5">
+    <div id="data-panel">
+      <table id="basket" class="table borderless" style="position: relative;
+      text-align: center; background-color: white; font-size: 15px;">
+        <thead>
+          <tr class="d-flex">
+            <th class="col-1">#</th>
+            <th class="col-3">Title</th>
+            <th class="col-2">Time</th>
+            <th class="col-2">Date</th>
+            <th class="col-2">Ticket</th>
+            <th class="col-1">Quantity</th>
+            <th class="col-1">Remove</th>
+          </tr>
+        </thead>
+        <tbody id="tickets">
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="col-12" style="text-align:right; font-weight: bold; font-size: 18px">
+              <label class="mr-3" id="totalprice"></label>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-12" style="text-align:right">
+              <input class="form-control border border-dark text-center price" style="width: 170px; font-size: 16px;"
+                     name="button" type="button" value="Get total price"/>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-12" style="text-align:right">
+              <input class="form-control border border-dark text-center price" style="width: 110px; font-size: 16px;"
+                     name="button" type="button" value="Purchase" onclick=""/>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="basket.js"></script>
+  <script src="../index.js"></script>
+</body>
+
+</html>

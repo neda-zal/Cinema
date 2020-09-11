@@ -1,0 +1,129 @@
+<div class="page-bg"></div>
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
+
+  <nav class="m-3 navbar navbar-default bg-light border border-dark">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <form class="form-inline p-3" name="buttons" method="post">
+          <input id="butto" class="form-control border border-dark text-center mr-3 btn" style="width: 100px;"
+                 name="button" type="button" value="Home" href="#" onclick="openPage('/dashboard')"/>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container bg bg-light">
+  <div class="row my-2">
+      <div class="col-lg-8 order-lg-2">
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a href="" data-target="#history" data-toggle="tab" class="nav-link">Purchase History</a>
+              </li>
+              <li class="nav-item">
+                  <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit info</a>
+              </li>
+          </ul>
+          <div class="tab-content py-4">
+              <div class="tab-pane active" id="profile">
+                  <h5 class="mb-3">User Profile</h5>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <h6>Name</h6>
+                          <p>{{data.name}}</p>
+                          <h6>Surname</h6>
+                          <p>{{data.surname}}</p>
+                          <h6>Birthdate</h6>
+                          <p>{{data.birth}}</p>
+                          <h6>Address</h6>
+                          <p>{{data.address}}</p>
+                      </div>
+                  </div>
+                  <!--/row-->
+              </div>
+              <div class="tab-pane" id="history">
+                  <table class="table" style="
+                  text-align: center; background-color: white; font-size: 15px;">
+                    <thead>
+                      <tr>
+                        <th scope="col-3">Title</th>
+                        <th scope="col-2">Quantity</th>
+                        <th scope="col-3">Date</th>
+                        <th scope="col-2">Ticket</th>
+                        <th scope="col-2">Time</th>
+                      </tr>
+                    </thead>
+                      <tbody>
+                        {{#each history}}
+                              <tr style="color: black">
+                                  <td>{{this.title}}</td>
+                                  <td>{{this.quantity}}</td>
+                                  <td>{{this.date}}</td>
+                                  <td>{{this.ticket}}</td>
+                                  <td>{{this.time}}</td>
+                              </tr>
+                        {{/each}}
+                      </tbody>
+                  </table>
+              </div>
+              <div class="tab-pane" id="edit">
+                  <form role="form" method="post">
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" name="name" type="text" value="{{data.name}}">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" name="surname" type="text" value="{{data.surname}}">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" name="address" type="text" value="{{data.address}}">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" name="username"type="text" value="{{data.username}}">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Birthdate</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" name="birth" type="date" value="{{data.birth}}">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" name="password" type="password" value="{{data.password}}">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label class="col-lg-3 col-form-label form-control-label"></label>
+                          <div class="col-lg-9">
+                              <button class="btn" value="Save Changes">Save changes</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 order-lg-1 text-center">
+          <img src="../assets/images/Paul-18-512.png" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+      </div>
+  </div>
+</div>

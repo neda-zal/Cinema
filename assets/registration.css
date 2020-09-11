@@ -1,0 +1,69 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+h1 {
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.row {
+    line-height: 30px;
+    padding: 20px;
+}
+
+#submitted {
+    text-align: center;
+    font-size: 17px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.btn {
+color: #000 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 2px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+.btn:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+
+.neon {
+  color: #000;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}

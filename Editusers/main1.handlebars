@@ -1,0 +1,91 @@
+<div class="page-bg"></div>
+
+  <div class="animation-wrapper">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
+
+<!-- navigation -->
+<nav class="navbar navbar-default bg-light border border-dark navbar-static-top" style="margin: 14px;">
+  <div class="container-fluid">
+    <div class="navbar-header" style="margin-top: 12px; margin-bottom: 12px;">
+      <form class="form-inline" name="buttons" method="post">
+        <input class="form-control border border-dark text-center" style="width: 100px;"
+               name="button" type="button" value="Home" onclick="openPage('/home')"/>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div>
+  <h1 class="align-middle neon" style="font-weight: bold; margin: 30px;">Edit users</h1>
+</div>
+
+<div class="container">
+  <table class="table" style="position: relative;
+  text-align: center; background-color: white; font-size: 15px;">
+    <thead>
+      <tr>
+        <th scope="col-1">ID</th>
+        <th scope="col-2">Name</th>
+        <th scope="col-2">Surname</th>
+        <th scope="col-2">Username</th>
+        <th scope="col-2">Birthdate</th>
+        <th scope="col-2">Address</th>
+        <th scope="col-1">Edit</th>
+      </tr>
+    </thead>
+      <tbody>
+              <tr>
+                  <td>{{data.id}}</td>
+                  <td>{{this.name}}</td>
+                  <td>{{this.surname}}</td>
+                  <td>{{this.username}}</td>
+                  <td>{{this.birth}}</td>
+                  <td>{{this.address}}</td>
+                  <td><input type="button" class="form-control" value="Edit" data-id="{{this.id}}"
+                    onclick="openPage('/editusers/{{this.id}}');" data-toggle="modal" data-target="#at-login"></td>
+              </tr>
+      </tbody>
+  </table>
+</div>
+
+<div class="container at-login-form">
+  <div class="modal fade" id="at-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <form method="patch" class="needs-validation" novalidate>
+            <div class="form-group">
+              <input name="username" value="" type="text" class="form-control-form xs-12" id="exampleInputUsername" placeholder="Username">
+              <div id="invalid-feedback" style="font-size: 12px;">
+              </div>
+            </div>
+            <div class="form-group">
+              <input name="id" type="password" value="" class="form-control-form xs-12" id="exampleInputPasswordpas" placeholder="Password">
+              <div name="passwords" id="invalid-feedback1" style="font-size: 12px;">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                  <div id="invalid-feedback2" style="font-size: 12px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="loginbtn" class="form-control" type="submit" style="height: 50px;" href="/login">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

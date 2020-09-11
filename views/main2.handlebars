@@ -1,0 +1,59 @@
+<div class="page-bg"></div>
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
+
+<div>
+  <nav class="m-3 navbar bg-light d-flex flex-row-reverse border border-dark">
+    <div>
+      <form name="loginas" class="form-inline p-3">
+        <label>Welcome back, {{user.username}}&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input class="form-control mr-3 border border-dark" type="button" name="button" value="Basket"
+         onclick="openPage('/basket')">
+        <input class="form-control border border-dark mr-3" style="width: 100px;"
+              type="button" name="button" onclick="openPage('/profile')" value="Profile">
+        <input class="form-control mr-3 border border-dark text-center" style="width: 100px;"
+              name="button" type="button" value="Logout" onclick="openPage('/logout')">
+      </form>
+    </div>
+
+    <div>
+      <form class="form-inline p-3" name="buttons" method="post">
+        <input class="form-control border border-dark text-center mr-3" style="width: 140px;"
+               name="button" type="button" value="Now showing" onclick="openPage('/nowshowingmovies')"/>
+        <input class="form-control border border-dark text-center mr-3" style="width: 110px;"
+              name="button" type="button" value="Upcoming" onclick="openPage('/upcomingmovies')"/>
+        <input class="form-control border border-dark text-center mr-3" style="width: 100px;"
+              name="button" type="button" value="Pricelist" onclick="openPage('/tickets')"/>
+      </form>
+    </div>
+  </nav>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide mx-5 px-5" data-ride="carousel">
+
+  <div class="carousel-inner" style="width:100%; max-height: 600px !important;">
+    <div class="carousel-item active">
+      <img src="images/a.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img src="images/b.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img src="images/c.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img src="images/d.jpg" alt="Fourth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>

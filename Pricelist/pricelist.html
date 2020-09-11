@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pricelist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Monika Barauskaite and Neda Zalieskaite">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/particles.css">
+    <link rel="stylesheet" href="../assets/pricelist.css">
+    <script src="../index.js"></script>
+    <link rel="icon" href="../assets/images/Capture.png" type="image" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+
+    <div>
+      <nav class="m-3 navbar bg-light border border-dark">
+        <div>
+          <form class="form-inline p-3" name="buttons" method="post">
+            <input class="form-control border border-dark text-center mr-3" style="width: 100px;"
+                   name="button" type="button" value="Home" onclick="openPage('/home');" />
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <h1 class="m-3 align-middle neon" style="font-weight: bold;">Our pricelist</h1>
+
+    <div class="carousel-inner px-5">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img" src="../assets/images/ticket.jpg" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Single Ticket, E-ticket</h5>
+                <p class="card-text"><strong>5&euro;</strong>
+                 <br>+1&euro; for 3D movies.
+                 <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img" src="../assets/images/ticket.jpg" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Family Ticket </h5>
+                <p class="card-text"><strong>15&euro;</strong>
+                  <br>2 adults + 2 childrens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img" src="../assets/images/ticket.jpg" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Group Ticket</h5>
+                <p class="card-text"><strong>23&euro;</strong>
+                  <br>For a group of 6 people.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img" src="../assets/images/ticket.jpg" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Discount Ticket</h5>
+                <p class="card-text"><strong>3&euro;</strong>
+                  <br>For children up to 6 yars, students and seniors.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
